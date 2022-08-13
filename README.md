@@ -1,11 +1,12 @@
-# sdfas
+# sdfa
 
   ### License
+  ![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
   <a href="https://img.shields.io/badge/license-MIT-blue.svg" target="_blank">MIT</a>
   ***
   
   ## Description
-  sdfjaldkf
+  sdfjalksdf
   ***
   
   ## Table of Contents
@@ -19,18 +20,18 @@
   <a name="installation"></a>
   ## Installation Instructions
   
-  sdjflakdfj
+  jfladjf
   ***
   
   <a name="usage"></a>
   ## Usage Information
   
-  jflsdkjf
+  sdjladflka
   ***
   
   <a name="contribution"></a>
   ## Contribution guidelines
-  jfklsda
+  sjfdlka
   ***
   
   <a name="questions"></a>
@@ -41,4 +42,4 @@
   
   ### Contact Me:
   If you have any additional questions, please send me an email.
-  ####sdjfla@gmail.c 
+  ####sdjfalksdfa@gmail.com 

@@ -15,6 +15,7 @@ const generateREADME = ({
   `# ${title}
 
   ### License
+  ![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
   <a href="https://img.shields.io/badge/license-${license}-blue.svg" target="_blank">${license}</a>
   ***
   
