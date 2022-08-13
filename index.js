@@ -38,7 +38,7 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'Please choose a license for your application. ',
-    choices: ['GNU GPLv3','Mozilla PLv2','MIT','Boost Software'], //http://choosealicense.com
+    choices: ['Apache','MIT','MIT License','MIT/Apache-2.0'],
   },
   {
     type: 'input',

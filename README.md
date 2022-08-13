@@ -1,13 +1,12 @@
-# title
-***
+# ${title}
 
 ### License
-$(license) // add description of the license the application is covered under 
----
+${license} // add description of the license the application is covered under 
+***
 
 ## Description
 ${discription}
----
+***
 
 ## Table of Contents
 1. [Installation](#installation)
@@ -15,26 +14,33 @@ ${discription}
 3. [Contribution](#contribution)
 4. [Test](#test)
 5. [Questions](#questions)
+***
 
 <a name="installation"></a>
 ## Installation Instructions
+```md
 ${installation}
+```
+***
 
 <a name="usage"></a>
 ## Usage Information
+```md
 ${usage}
+```
+***
 
 <a name="contribution"></a>
 ## Contribution guidelines
 ${contribution}
+***
 
 <a name="questions"></a>
 ## Questions
 
-### GitHub Profile
+### GitHub Profile:
 ${github}
 
-### Contact Me
+### Contact Me:
 If you have any additional questions, please send me an email.
-${email}
 
