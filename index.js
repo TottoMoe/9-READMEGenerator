@@ -2,9 +2,65 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 
+const generateREADME = ({
+  title,
+  license,
+  discription,
+  installation,
+  usage,
+  contribution,
+  github,
+  email,
+}) => 
+  `# ${title}
+
+  ### License
+  ${license}
+  ***
+  
+  ## Description
+  ${discription}
+  ***
+  
+  ## Table of Contents
+  1. [Installation](#installation)
+  2. [Usage](#usage)
+  3. [Contribution](#contribution)
+  4. [Test](#test)
+  5. [Questions](#questions)
+  ***
+  
+  <a name="installation"></a>
+  ## Installation Instructions
+  
+  ${installation}
+  ***
+  
+  <a name="usage"></a>
+  ## Usage Information
+  
+  ${usage}
+  ***
+  
+  <a name="contribution"></a>
+  ## Contribution guidelines
+  ${contribution}
+  ***
+  
+  <a name="questions"></a>
+  ## Questions
+  
+  ### GitHub Profile:
+  ${github}
+  
+  ### Contact Me:
+  If you have any additional questions, please send me an email.
+  ${email} `
+
+
+
 // TODO: Create an array of questions for user input
-const questions = [
-  {
+const questions = [{
     type: 'input',
     name: 'title',
     message: 'Please enter your project title. ',
@@ -38,11 +94,11 @@ const questions = [
     type: 'list',
     name: 'license',
     message: 'Please choose a license for your application. ',
-    choices: ['Apache','MIT','MIT License','MIT/Apache-2.0'],
+    choices: ['Apache', 'MIT', 'MIT License', 'MIT/Apache-2.0'],
   },
   {
     type: 'input',
-    name: 'username',
+    name: 'github',
     message: 'Please enter your GitHub username. ',
   },
   {
@@ -54,7 +110,7 @@ const questions = [
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-  
+
 }
 
 // TODO: Create a function to initialize app
@@ -63,9 +119,9 @@ function init() {
     .prompt(questions)
     .then((answers) => {
       const readmePageContent = generateREADME(answers);
-  
+
       fs.writeFile('README.md', readmePageContent, (err) =>
-        err ? console.log(err) : console.log('Successfully created index.html!')
+        err ? console.log(err) : console.log('Successfully created README.md!')
       );
     });
 }
