@@ -16,7 +16,6 @@ const generateREADME = ({
 
   ### License
   ![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
-  <a href="https://img.shields.io/badge/license-${license}-blue.svg" target="_blank">${license}</a>
   ***
   
   ## Description
@@ -111,7 +110,8 @@ const questions = [{
 
 // TODO: Create a function to write README file
 function writeToFile(fileName, data) {
-
+  fs.writeFile(fileName, data, (err) =>
+  err ? console.log(err) : console.log('Successfully created README.md!'))
 }
 
 // TODO: Create a function to initialize app
@@ -121,9 +121,7 @@ function init() {
     .then((answers) => {
       const readmePageContent = generateREADME(answers);
 
-      fs.writeFile('README.md', readmePageContent, (err) =>
-        err ? console.log(err) : console.log('Successfully created README.md!')
-      );
+      writeToFile('README.md', readmePageContent);
     });
 }
 
