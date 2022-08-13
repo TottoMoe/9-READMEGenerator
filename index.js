@@ -15,7 +15,7 @@ const generateREADME = ({
   `# ${title}
 
   ### License
-  ${license}
+  https://img.shields.io/badge/license-${license}-blue.svg
   ***
   
   ## Description
@@ -51,11 +51,11 @@ const generateREADME = ({
   ## Questions
   
   ### GitHub Profile:
-  ${github}
+  https://github.com/${github}
   
   ### Contact Me:
   If you have any additional questions, please send me an email.
-  ${email} `
+  ####${email} `
 
 
 
