@@ -1,63 +1,7 @@
 // TODO: Include packages needed for this application
 const inquirer = require('inquirer');
 const fs = require('fs');
-
-const generateREADME = ({
-  title,
-  license,
-  discription,
-  installation,
-  usage,
-  contribution,
-  github,
-  email,
-}) => 
-  `# ${title}
-
-  ### License
-  ![GitHub license](https://img.shields.io/badge/license-${license}-blue.svg)
-  ***
-  
-  ## Description
-  ${discription}
-  ***
-  
-  ## Table of Contents
-  1. [Installation](#installation)
-  2. [Usage](#usage)
-  3. [Contribution](#contribution)
-  4. [Test](#test)
-  5. [Questions](#questions)
-  ***
-  
-  <a name="installation"></a>
-  ## Installation Instructions
-  
-  ${installation}
-  ***
-  
-  <a name="usage"></a>
-  ## Usage Information
-  
-  ${usage}
-  ***
-  
-  <a name="contribution"></a>
-  ## Contribution guidelines
-  ${contribution}
-  ***
-  
-  <a name="questions"></a>
-  ## Questions
-  
-  ### GitHub Profile:
-  https://github.com/${github}
-  
-  ### Contact Me:
-  If you have any additional questions, please send me an email.
-  ####${email} `
-
-
+const generateREADME = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
 const questions = [{
@@ -94,7 +38,7 @@ const questions = [{
     type: 'list',
     name: 'license',
     message: 'Please choose a license for your application. ',
-    choices: ['Apache', 'MIT', 'MIT License', 'MIT/Apache-2.0'],
+    choices: ['Apache', 'MIT', 'GNU', 'Mozilla'],
   },
   {
     type: 'input',
